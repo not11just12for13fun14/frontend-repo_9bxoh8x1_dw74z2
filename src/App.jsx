@@ -53,26 +53,36 @@ function App() {
       desc: 'Audit, riset keyword, on-page & off-page optimization untuk meningkatkan peringkat dan trafik organik.'
     },
     {
-      icon: <Palette className="w-6 h-6" />, title: 'Desain Kreatif',
-      desc: 'Identitas visual, UI/UX, dan materi kampanye yang konsisten dan menarik perhatian.'
+      icon: <Palette className="w-6 h-6" />, title: 'Jasa Desain Logo & Branding',
+      desc: 'Identitas visual, brand guideline, UI/UX, dan materi kampanye yang konsisten dan menarik.'
     },
     {
-      icon: <Megaphone className="w-6 h-6" />, title: 'Promosi & Growth',
+      icon: <Megaphone className="w-6 h-6" />, title: 'Promosi Digital (Creative Agency)',
       desc: 'Strategi konten, distribusi, dan kampanye multiplatform untuk brand awareness dan konversi.'
     },
   ]
 
   const benefits = [
-    'Strategi berbasis data & riset kompetitor',
-    'Growth framework: attract → engage → convert',
+    'Strategi SEO spesialist + desain yang saling menguatkan',
+    'Riset keyword komersial dan konten promosi bernilai',
     'Report yang jelas dan bisa ditindaklanjuti',
-    'Pendekatan kolaboratif, bukan sekadar vendor',
+    'Pendekatan seperti creative agency: end-to-end growth',
   ]
 
   const statItems = [
     { label: 'Rata-rata Peningkatan Trafik', value: '187%' },
     { label: 'Keyword di Halaman 1', value: '320+' },
     { label: 'Konversi Naik', value: '2.4x' },
+  ]
+
+  const seoPills = [
+    'SEO spesialist',
+    'creative agency',
+    'konsultan design',
+    'jasa branding',
+    'jasa desain logo',
+    'jasa desainer grafis',
+    'promosi digital'
   ]
 
   return (
@@ -102,16 +112,21 @@ function App() {
             <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{duration:0.5}} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 text-blue-700 text-sm font-medium">
               <span>Fajar Simbolo</span>
               <span className="opacity-60">•</span>
-              <span>Branding, Design & SEO Consultant</span>
+              <span>Spesialis SEO, Creative Agency & Konsultan Desain</span>
             </motion.div>
             <motion.h1 initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{duration:0.6}}
               className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
-              Tingkatkan Trafik & Konversi dengan Strategi SEO + Desain yang Selaras
+              Tingkatkan Trafik, Brand Awareness, dan Konversi dengan SEO + Branding
             </motion.h1>
             <motion.p initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay:0.1, duration:0.6}}
               className="mt-4 text-lg text-gray-600">
-              Saya, Fajar Simbolo, membantu brand dan bisnis menonjol di mesin pencari dan di benak pelanggan—dari fondasi teknis hingga eksekusi kreatif.
+              Saya, Fajar Simbolo, menawarkan jasa branding, jasa desain logo, jasa desainer grafis, dan promosi berbasis strategi SEO yang terbukti.
             </motion.p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {seoPills.map((p, i) => (
+                <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">{p}</span>
+              ))}
+            </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition">
                 Konsultasi Gratis <ArrowRight className="w-4 h-4"/>
@@ -145,15 +160,15 @@ function App() {
               <div className="mt-6 grid grid-cols-3 gap-3">
                 <div className="rounded-xl p-4 bg-gradient-to-br from-blue-50 to-white">
                   <Search className="w-5 h-5 text-blue-600"/>
-                  <p className="text-xs mt-2 text-gray-600">Audit Teknis</p>
+                  <p className="text-xs mt-2 text-gray-600">SEO Spesialist</p>
                 </div>
                 <div className="rounded-xl p-4 bg-gradient-to-br from-purple-50 to-white">
                   <Palette className="w-5 h-5 text-purple-600"/>
-                  <p className="text-xs mt-2 text-gray-600">Branding</p>
+                  <p className="text-xs mt-2 text-gray-600">Konsultan Desain</p>
                 </div>
                 <div className="rounded-xl p-4 bg-gradient-to-br from-emerald-50 to-white">
                   <Megaphone className="w-5 h-5 text-emerald-600"/>
-                  <p className="text-xs mt-2 text-gray-600">Distribusi</p>
+                  <p className="text-xs mt-2 text-gray-600">Promosi</p>
                 </div>
               </div>
             </div>
@@ -254,7 +269,7 @@ function App() {
 
               <div>
                 <label className="text-sm font-medium">Pesan</label>
-                <textarea required rows={5} value={form.message} onChange={e=>setForm({...form, message: e.target.value})} placeholder="Ceritakan tantangan & target Anda..." className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <textarea required rows={5} value={form.message} onChange={e=>setForm({...form, message: e.target.value})} placeholder="Ceritakan kebutuhan: SEO spesialist, creative agency, konsultan design, jasa branding, atau jasa desain logo..." className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -296,7 +311,7 @@ function App() {
       {/* Footer */}
       <footer className="py-10 border-t border-gray-100">
         <div className="mx-auto max-w-7xl px-6 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div>© {new Date().getFullYear()} Fajar Simbolo — Branding, Design & SEO Consultant</div>
+          <div>© {new Date().getFullYear()} Fajar Simbolo — Spesialis SEO, Creative Agency & Konsultan Desain</div>
           <div className="flex items-center gap-6">
             <a href="#services" className="hover:text-blue-600">Layanan</a>
             <a href="#works" className="hover:text-blue-600">Studi Kasus</a>
