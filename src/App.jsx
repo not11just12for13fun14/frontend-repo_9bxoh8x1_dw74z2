@@ -84,7 +84,7 @@ function App() {
             <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 grid place-items-center text-white">
               <Rocket className="w-5 h-5" />
             </div>
-            <span className="font-semibold">SEO & Creative Consultant</span>
+            <span className="font-semibold">Fajar Simbolo</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#services" className="hover:text-blue-600">Layanan</a>
@@ -99,13 +99,18 @@ function App() {
       <section className="pt-32 md:pt-40 pb-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
+            <motion.div initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{duration:0.5}} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/10 text-blue-700 text-sm font-medium">
+              <span>Fajar Simbolo</span>
+              <span className="opacity-60">•</span>
+              <span>Branding, Design & SEO Consultant</span>
+            </motion.div>
             <motion.h1 initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{duration:0.6}}
-              className="text-4xl md:text-6xl font-extrabold leading-tight">
+              className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
               Tingkatkan Trafik & Konversi dengan Strategi SEO + Desain yang Selaras
             </motion.h1>
             <motion.p initial={{opacity:0, y:20}} animate={{opacity:1, y:0}} transition={{delay:0.1, duration:0.6}}
               className="mt-4 text-lg text-gray-600">
-              Saya membantu brand dan bisnis menonjol di mesin pencari dan di benak pelanggan—dari fondasi teknis hingga eksekusi kreatif.
+              Saya, Fajar Simbolo, membantu brand dan bisnis menonjol di mesin pencari dan di benak pelanggan—dari fondasi teknis hingga eksekusi kreatif.
             </motion.p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#contact" className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition">
@@ -291,7 +296,7 @@ function App() {
       {/* Footer */}
       <footer className="py-10 border-t border-gray-100">
         <div className="mx-auto max-w-7xl px-6 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div>© {new Date().getFullYear()} SEO Specialist & Creative Consultant</div>
+          <div>© {new Date().getFullYear()} Fajar Simbolo — Branding, Design & SEO Consultant</div>
           <div className="flex items-center gap-6">
             <a href="#services" className="hover:text-blue-600">Layanan</a>
             <a href="#works" className="hover:text-blue-600">Studi Kasus</a>
