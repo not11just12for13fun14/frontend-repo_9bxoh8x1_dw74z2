@@ -3,11 +3,11 @@
 > vite
 
 
-  VITE v5.4.20  ready in 315 ms
+  VITE v5.4.20  ready in 260 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.5.223:3000/
-7:07:36 AM [vite] warning: The character ">" is not valid inside a JSX element
+7:10:11 AM [vite] warning: The character ">" is not valid inside a JSX element
 261|                      <option>Rp15-30jt</option>
 262|                      <option>Rp30-60jt</option>
 263|                      <option>> Rp60jt</option>
