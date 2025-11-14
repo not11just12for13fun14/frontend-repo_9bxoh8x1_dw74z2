@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Rocket, Search, Palette, Megaphone, Zap, CheckCircle2, Mail, Phone, MapPin, ArrowRight, Stars } from 'lucide-react'
+import InteractiveGallery from './components/InteractiveGallery'
 
 function App() {
   const [navSolid, setNavSolid] = useState(false)
@@ -99,6 +100,7 @@ function App() {
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#services" className="hover:text-blue-600">Layanan</a>
             <a href="#works" className="hover:text-blue-600">Studi Kasus</a>
+            <a href="#gallery" className="hover:text-blue-600">Tim</a>
             <a href="#contact" className="hover:text-blue-600">Konsultasi</a>
             <a href="/test" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700">Cek Backend <ArrowRight className="w-4 h-4"/></a>
           </div>
@@ -173,6 +175,21 @@ function App() {
               </div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section id="gallery" className="py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold">Tim Kompak & Profesional</h2>
+              <p className="text-gray-600 mt-2">Wajah-wajah Indonesia yang siap kolaborasi: spesialis SEO, desainer, dan strategist.</p>
+            </div>
+          </div>
+          <div className="mt-8">
+            <InteractiveGallery />
+          </div>
         </div>
       </section>
 
@@ -315,6 +332,7 @@ function App() {
           <div className="flex items-center gap-6">
             <a href="#services" className="hover:text-blue-600">Layanan</a>
             <a href="#works" className="hover:text-blue-600">Studi Kasus</a>
+            <a href="#gallery" className="hover:text-blue-600">Tim</a>
             <a href="#contact" className="hover:text-blue-600">Konsultasi</a>
           </div>
         </div>

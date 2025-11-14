@@ -3,17 +3,17 @@
 > vite
 
 
-  VITE v5.4.20  ready in 228 ms
+  VITE v5.4.20  ready in 221 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.5.223:3000/
-7:22:15 AM [vite] warning: The character ">" is not valid inside a JSX element
-281|                      <option>Rp15-30jt</option>
-282|                      <option>Rp30-60jt</option>
-283|                      <option>> Rp60jt</option>
+7:27:06 AM [vite] warning: The character ">" is not valid inside a JSX element
+298|                      <option>Rp15-30jt</option>
+299|                      <option>Rp30-60jt</option>
+300|                      <option>> Rp60jt</option>
    |                              ^
-284|                    </select>
-285|                  </div>
+301|                    </select>
+302|                  </div>
 
   Plugin: vite:esbuild
   File: /home/workspace/src/App.jsx
